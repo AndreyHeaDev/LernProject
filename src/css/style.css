@@ -1,0 +1,236 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    /* width: 1920px; Убираем ширину, ширина подстраивается автоматически под широну экрана*/
+    height: 50px;
+    background-color: #212121;
+}
+
+.mmenu {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0 0;
+    list-style-type: none;
+
+}
+
+.mmenu .mmenu_link {
+    font-size: 15px;
+    font-weight: 300;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.mmenu .mmenu_item {
+    border-right: 2px dotted black;
+    padding-right: 28px;
+}
+
+.subheader {
+    position: absolute;
+    width: 100%;
+    /* width: 1920px; Удаляем ширину */
+    height: 84px;
+    /* opacity: 0.6; Делает всё на слое полупрозрачным, на этого не надо, нам нужен прозрачный фон */
+    background-color: rgba(0, 0, 0, .6); /*Задаём прозрачность фону через @-канал*/
+}
+
+.subheader .subheader_logo {
+    display: block;
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+.subheader .subheader_ofPartners {
+    margin-top: 6px;
+    opacity: 0.5;
+    /* font-family: Roboto; Шрифт задан weight.  */
+    font-size: 13px;
+    /* line-height: 68px; */
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.subheader .subheader_call {
+    /* font-family: Roboto; */
+    display: block;
+    margin-top: 23px;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: right;
+}
+
+.subheader .subheader_phone {
+    /* font-family: Roboto; */
+    display: block;
+    /* margin: 0; */
+    margin-top: 9px;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: right;
+    text-decoration: none;
+}
+
+.subheader .subheader_btn {
+    margin-top: 16px;
+    width: 178px;
+    height: 52px;
+    background-image: linear-gradient(0.0deg, #1eacc7 0%, #4ce2ff 100%);
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.11);
+    /* font-family: Roboto;   */
+    font-size: 14px;
+    /* line-height: 68px; */
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    color: #ffffff;
+}
+
+.promo {
+    /* display: block; */
+    /* margin: 151 auto 132 auto; */
+    min-height: 748px;
+    background: url(/src/img/promo_bg.png) center center/cover no-repeat;
+    text-align: center;
+}
+
+.promo .promo_header {
+    /* Text styles for "КОМПАНИЯ UBER PARTNERS!'" *//* 
+Text styles for "КОМПАНИЯ UBER PARTNERS!'"
+ */
+/* font-family: Roboto; */
+margin: 0;
+margin-top: 151px;
+/* margin-top: 67px; */
+font-size: 69px;
+line-height: 60px;
+font-weight: 900;
+text-transform: uppercase;
+color: #ffffff;
+
+}
+
+.promo .promo_subheader {
+/* 
+Text styles for "ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!"
+ */
+margin: 0;
+margin-top: 16px;
+font-size: 41px;
+line-height: 42px;
+font-weight: 700;
+text-transform: uppercase;
+color: #ffffff;
+}
+
+.promo .promo_descr {
+    /* font-family: Roboto; */
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    /* text-align: justify; */
+}
+
+.promo .promo_btn {
+    margin: 115px auto;
+    width: 265px;
+    height: 69px;
+    background-image: linear-gradient(0.0deg, #1eacc7 0%, #4ce2ff 100%);
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.11); 
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    color: #ffffff;
+}
+
+.reasons {
+    /* display: inline-block; */
+    /* padding-top: 71px; */
+    min-height: 900px;
+    text-align: center;
+    /* background-color:aqua; */
+}
+
+.reasons .reasons_btn {
+    margin-top: 71px;
+    /* font-family: Roboto; */
+    width: 112px;
+    height: 24px;
+    background-color: #000000;
+    font-size: 11px;
+    /* line-height: 68px; */
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.reasons .reasons_header {
+    /* font-family: Roboto; */
+    margin: 0px;
+    margin-top: 38px;
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.reasons .reasons_itm {
+ /*    display: flex;
+    justify-content: space-between;
+    margin-top: 35px; */
+    display: flex;
+    margin-top: 34px;
+    height: 141px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+
+.reasons .reasons_square {
+    display: flex;
+    width: 113px;
+    height: 113px;
+    margin-right: 26px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1eacc7;
+    border-radius: 100%;
+} 
+
+
+.reasons .reasons_descr {
+    width: 341px;
+    text-align: justify;
+    /* font-family: Roboto; */
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #1eacc7;
+}
+
+.reasons  .reasons_itm .reasons_descr .reasons_txt {
+    font-size: 15px;
+    font-weight: 300;
+    color: #202020;
+}

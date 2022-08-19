@@ -1,0 +1,341 @@
+@media (max-width: 1200px)
+    .mmenu
+        padding-right: 8px
+        &_item
+            padding-right: 20px
+        &_link
+            font-size: 14px
+    .promo
+        &_header
+            font-size: 50px
+    .reasons
+        &_descr
+            width: 309px
+            font-size: 16px
+        &_txt
+            font-size: 14px
+    .mobile
+        &_itm
+            width: 309px
+    .footer
+        &_links
+            &_header
+                a
+                    font-size: 13px
+            &_subheader
+                a
+                    font-size: 9px
+@media (max-width: 991px)
+    .mmenu
+        padding-right: 0px
+        &_item
+            padding-right: 8px
+        &_link
+            font-size: 12px
+    .subheader
+        img
+            width: 100%
+        &_ofPartners
+            font-size: 11px 
+        &_phone
+            font-size: 18px
+        &_btn
+            width: 100%
+            height: 40px
+            margin-top: 21px
+    .promo
+        &_header
+            font-size: 40px
+        &_subheader
+            font-size: 30px
+    .reasons
+        &_itm
+            height: 297px
+            flex-direction: column
+            justify-content: flex-start
+            align-items: center
+        &_header
+            font-size: 33px
+        &_subheader
+            font-size: 15px
+    .mobile
+        &_itm
+            width: 100%
+            &_descr
+                font-size: 16px
+    .terms
+        &_title
+            font-size: 19px
+        &_list
+            font-size: 13px
+@media (max-width: 767px)   //размерность 768px, но перестроение колонок происходит на 767px
+    .mmenu
+        padding: 12px 15px
+        position: fixed
+        top: 0px
+        left: -100% 
+        width: 50%
+        height: 100vh 
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        z-index: 1
+        background-color: rgba(0,0,0,.8)
+        transition: 0.6s all 
+ 
+        &_active
+            left: 0
+ 
+        &_item
+            padding-right: 0
+            border: none // удаляем разграничитель справа, который следовало удалить раньше (!)
+            margin-top: 10px
+        &_link
+            font-size: 20px
+
+    .bigmack    
+        display: block // Правило работает на разрешении <=767px. Свойство display в block, для занятия пседоэлементом всей ширины, выделенной под него
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+    
+        span
+            display: block
+            margin-bottom: 2px
+            height: 2px
+            width: 100%
+            background-color: #fff
+        &_active
+            span
+                margin-bottom: -2px
+                transition: 0.5s all
+                &:nth-child(1)
+                    transform: rotate(-45deg) //translateY(-3px) ???
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: rotate(45deg) //translateY(-3px) ???
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+
+    .subheader
+        &_phone
+            font-size: 16px
+            text-align: center
+            margin-top: 10px
+        &_btn
+            display: block //Изменим исходный тип display с inline
+            width: 200px
+            height: 40px
+            margin: 0 auto
+            margin-top: 3px 
+    .promo
+        &_header
+            line-height: 45px
+        &_subheader
+            font-size: 30px
+    .reasons
+        &_square
+            margin-right: 0
+
+@media (max-width: 576px)
+
+    .reasons_btn
+        margin-top: 25px
+    .reasons_header
+        margin-top: 15px
+        font-size: 16px
+        line-height: 16px
+
+    nav
+        height: 30px
+
+    .mmenu
+        width: 85%
+        &_item
+            width: 100%
+            text-align: center
+            padding: 5px  0
+        &_link
+            display: block
+            
+    .bigmack
+        width: 20px
+        height: 9px
+        right: 10px
+    
+    .subheader
+        height: 60px
+        &_ofPartners
+            display: none
+        &_logo
+            margin-top: 15px 
+        &_phone
+            height: 9px
+            width: 90px
+            font-size: 12px
+            margin: 0 auto
+            margin-top: 8px
+        &_btn
+            height: 22px
+            width: 110px
+            font-size: 10px
+            margin: 0 auto
+            margin-top: 11px
+            &:hover
+                background-image: linear-gradient(0deg, $main_color 0%, $btn_grad_end 100%)
+    .promo
+        min-height: 400px
+        padding: 113px 0 32px 0
+        &_header
+            // display: none
+            margin: 0
+            font-size: 30px
+            padding: 0 24px 0 24px
+            line-height: 35px
+        &_subheader
+            // display: none
+            font-size: 20px
+            font-weight: 700
+            line-height: 23px
+            margin-top: 23px
+        &_descr
+            display: none
+        &_btn
+            // display: none
+            height: 51px
+            width: 210px
+            font-size: 17px
+            margin-top: 72px
+            margin-bottom: 0
+            &:hover
+                background-image: linear-gradient(0deg, $main_color 0%, $btn_grad_end 100%)
+
+    .reasons
+        padding-top: 0px
+        padding-bottom: 22px
+       
+        
+            // font-weight: 700
+        &_itm
+            margin-top: 26px
+            // min-height: 297px
+            height: fit-content
+
+        &_square
+            width: 100px
+            height: 100px
+        &_descr
+            width: 100%
+            margin-top: 26px
+            font-size: 16px
+            text-align: center
+        &_txt
+            display: block
+            width: 100%
+            font-size: 15px
+            line-height: 21px
+            text-align: justify
+    .choise
+        min-height: 390px
+        .row
+            justify-content: space-around
+        .reasons_btn
+            display: block
+            margin-top: 25px
+            text-align: center
+        .reasons_header
+            display: none
+        .reasons_subheader
+            display: none
+    .terms
+        .reasons_btn
+            margin-top: 25px
+        .reasons_header
+            margin-top: 15px
+            font-size: 16px
+            line-height: 16px
+        &_desc
+            // display: block
+            text-align: center
+        &_title
+            text-align: center
+    .all_worlds
+        &_wrapper
+            height: 360px
+            min-height: 360px
+        .reasons_btn
+            margin-top: 25px
+        .reasons_header
+            margin-top: 15px
+            font-size: 16px
+            line-height: 16px
+        &_desc
+            margin-top: 190px
+    
+    .footer
+        min-height: 245px
+        
+        &_white
+            min-height: 245px
+            flex-direction: column
+            align-items: center
+            justify-content: space-between
+            &_links
+                order: -1
+
+        &_white > div
+            width: 100%
+        &_icons
+            margin: 0
+            justify-content: center
+            &_itm
+                margin-top: 20px
+        &_links
+            min-height: 128px
+            &_devider
+                width: 253px
+                margin-top: 25px
+            &_header
+                margin-top: 14px
+                line-height: 21px
+                a
+                    margin: 0 5px 
+                    font-size: 14px
+            &_subheader
+                width: 264px
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-top: 3px;
+                line-height: 19px
+                a
+                    font-size: 10px
+            &_lang
+                margin-top: 10px
+                line-height: 11px
+
+        &_store
+            margin-top: 20px
+            margin-right: 0
+            justify-content: space-around
+ 
+        
+        
+            
+
+
+
+
+
+
+
+                
+
+
+                
